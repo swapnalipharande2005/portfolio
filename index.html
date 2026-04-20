@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapnali Pharande | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Swapnali Pharande, a Computer Science student and tech enthusiast."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="background-grid"></div>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#home">
+          <span class="brand-mark">SP</span>
+          <span>Swapnali Pharande</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-links" id="navMenu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+          <span class="theme-icon sun-icon">&#9728;</span>
+          <span class="theme-icon moon-icon">&#9790;</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="hero-identity">
+              <div class="profile-photo-frame hero-photo-frame">
+                <img src="./assets/images/profile.jpg" alt="Swapnali Pharande" />
+              </div>
+              <div class="hero-heading-block">
+                <p class="eyebrow">Tech Enthusiast</p>
+                <h1>Swapnali Pharande</h1>
+                <h2 class="hero-title">Computer Science Student</h2>
+              </div>
+            </div>
+
+            <p class="typing-line">
+              <span id="typedText"></span>
+              <span class="cursor">|</span>
+            </p>
+
+            <p class="hero-description">
+              Learning, building and improving every day while turning ideas into thoughtful,
+              user-friendly digital experiences.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="primary-button"
+                id="resumeDownloadButton"
+                href="./assets/resume/resume.pdf"
+                download="Swapnali-Pharande-Resume.pdf"
+              >
+                Download Resume
+              </a>
+              <button
+                class="secondary-button"
+                id="resumeViewButton"
+                type="button"
+                data-file="./assets/resume/resume.pdf"
+                data-fallback="Resume PDF is not available right now. Please add your file at assets/resume/resume.pdf."
+                data-title="Swapnali Pharande Resume"
+              >
+                View Resume
+              </button>
+              <a class="secondary-button" href="#projects">View Projects</a>
+            </div>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6.94 8.5H3.56V20h3.38V8.5Zm.22-3.56a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM20.44 12.66c0-3.03-1.62-4.44-3.79-4.44-1.75 0-2.54.96-2.98 1.64V8.5h-3.38V20h3.38v-6.42c0-1.69.32-3.32 2.42-3.32 2.08 0 2.11 1.94 2.11 3.43V20h3.39l-.01-7.34Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .5C5.65.5.5 5.7.5 12.14c0 5.15 3.29 9.52 7.86 11.06.58.11.79-.25.79-.56 0-.28-.01-1.2-.02-2.18-3.2.71-3.87-1.38-3.87-1.38-.52-1.35-1.28-1.71-1.28-1.71-1.04-.73.08-.72.08-.72 1.15.08 1.76 1.2 1.76 1.2 1.02 1.78 2.68 1.26 3.33.96.1-.76.4-1.26.72-1.55-2.56-.3-5.26-1.31-5.26-5.84 0-1.29.45-2.35 1.19-3.18-.12-.3-.52-1.5.11-3.14 0 0 .97-.32 3.19 1.22A10.87 10.87 0 0 1 12 5.97c.97 0 1.95.13 2.87.39 2.22-1.54 3.19-1.22 3.19-1.22.63 1.64.23 2.84.11 3.14.74.83 1.19 1.89 1.19 3.18 0 4.54-2.71 5.53-5.29 5.83.41.37.78 1.09.78 2.2 0 1.59-.01 2.87-.01 3.27 0 .31.21.68.8.56 4.56-1.54 7.85-5.91 7.85-11.06C23.5 5.7 18.35.5 12 .5Z"
+                  />
+                </svg>
+              </a>
+              <a href="mailto:swapnalipharande17@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2.13-.5L12 10.34 18.87 5H5.13ZM19 6.27l-6.39 4.97a1 1 0 0 1-1.22 0L5 6.27V18.5c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V6.27Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="hero-card-top">
+              <span class="status-dot"></span>
+              <span>Open to learning and collaboration</span>
+            </div>
+
+            <div class="hero-metrics">
+              <article class="metric-card">
+                <span class="metric-value">6+</span>
+                <span class="metric-label">Projects Built</span>
+              </article>
+              <article class="metric-card">
+                <span class="metric-value">8.43</span>
+                <span class="metric-label">CGPA</span>
+              </article>
+              <article class="metric-card">
+                <span class="metric-value">5</span>
+                <span class="metric-label">Certificates</span>
+              </article>
+              <article class="metric-card">
+                <span class="metric-value">3</span>
+                <span class="metric-label">Languages Known</span>
+              </article>
+            </div>
+
+            <div class="spotlight-card">
+              <p class="spotlight-label">Current Focus</p>
+              <h3>Real-world web apps, strong fundamentals, and practical problem solving.</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">About Me</p>
+            <h2>Driven by curiosity and hands-on learning</h2>
+          </div>
+          <div class="about-panel reveal">
+            <p>
+              I am a Computer Science student passionate about building real-world solutions using
+              technology. I enjoy creating user-friendly web applications and continuously improving
+              my skills through hands-on projects.
+            </p>
+            <div class="about-tags">
+              <span>Problem Solver</span>
+              <span>Quick Learner</span>
+              <span>Creative Thinker</span>
+              <span>Team Player</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Skills</p>
+            <h2>Balanced foundation across technology and teamwork</h2>
+          </div>
+          <div class="skill-groups">
+            <article class="glass-card reveal">
+              <div class="card-icon">&#8984;</div>
+              <h3>Core Concepts</h3>
+              <ul class="pill-list">
+                <li>Data Structures &amp; Algorithms (DSA)</li>
+                <li>Object-Oriented Programming using Java</li>
+                <li>DBMS</li>
+                <li>Basic Operating System</li>
+              </ul>
+            </article>
+            <article class="glass-card reveal">
+              <div class="card-icon">&#10022;</div>
+              <h3>Soft Skills</h3>
+              <ul class="pill-list">
+                <li>Communication</li>
+                <li>Leadership</li>
+                <li>Teamwork</li>
+              </ul>
+            </article>
+            <article class="glass-card reveal">
+              <div class="card-icon">&#9881;</div>
+              <h3>Minor Degree</h3>
+              <ul class="pill-list">
+                <li>Mechatronics Engineering</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="section-heading reveal technical-heading">
+            <p class="section-kicker">Technical Proficiency</p>
+            <h2>Tools and technologies I enjoy working with</h2>
+          </div>
+
+          <div class="tech-grid">
+            <article class="tech-card reveal">
+              <div class="tech-icon">&#128187;</div>
+              <h3>Languages</h3>
+              <p>C, Java, Python</p>
+            </article>
+            <article class="tech-card reveal">
+              <div class="tech-icon">&#128202;</div>
+              <h3>Data Science</h3>
+              <p>Pandas, NumPy, Matplotlib, Data Visualization &amp; Analysis</p>
+            </article>
+            <article class="tech-card reveal">
+              <div class="tech-icon">&#127760;</div>
+              <h3>Web Development</h3>
+              <p>HTML, CSS, JavaScript</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Education</p>
+            <h2>Academic journey so far</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">Present</span>
+                <h3>B.Tech in Computer Engineering</h3>
+                <p>Rajarambapu Institute of Technology, Ishwarpur</p>
+                <strong>CGPA: 8.43 (1st Year)</strong>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">Class XII</span>
+                <h3>Merry Angels Jr. College of Science, Akhade</h3>
+                <p>HSC: 83%</p>
+                <strong>MHT-CET: 93.33 percentile</strong>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">Class X</span>
+                <h3>Patit Pawan Vidyamandir, Ozarde</h3>
+                <p>SSC: 94.60%</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Projects</p>
+            <h2>Selected work built through curiosity and practice</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <span class="project-badge">C</span>
+              <h3>Bank Management System</h3>
+              <p>Handles account creation, transactions, and balance checking using file handling.</p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-badge">HTML / CSS / JS</span>
+              <h3>EV Charging Station Finder</h3>
+              <p>Locate nearby charging stations, view availability, and book slots.</p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-badge">C</span>
+              <h3>Library Management System</h3>
+              <p>
+                Developed a Library Management System using Stack and Linked List to efficiently
+                manage book records and operations.
+              </p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-badge">C / IoT</span>
+              <h3>Real-time Effluent Monitoring &amp; Alert System</h3>
+              <p>Tracks water pollution levels and sends alerts.</p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-badge">Java / JDBC / MySQL</span>
+              <h3>Online Shopping System</h3>
+              <p>User login, product browsing, cart, and order processing.</p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-badge">Python / ML</span>
+              <h3>AI Dietician System</h3>
+              <p>Personalized diet plans using machine learning.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certifications">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Certifications</p>
+            <h2>Certificate cards with quick click-to-view access</h2>
+          </div>
+
+          <div class="certificate-catalog">
+            <article class="certificate-entry reveal">
+              <div class="certificate-thumb">JAVA</div>
+              <p class="certificate-platform">Infosys Springboard</p>
+              <h3>Java</h3>
+              <p>Certificate for Java learning and foundational programming concepts.</p>
+              <button
+                class="certificate-button document-trigger"
+                type="button"
+                data-file="./assets/certificates/infosys-java.pdf"
+                data-title="Java Certificate"
+                data-fallback="Java certificate PDF could not be found."
+              >
+                View Certificate
+              </button>
+              <a class="inline-link" href="./assets/certificates/infosys-java.pdf" target="_blank" rel="noreferrer">
+                Open in new tab
+              </a>
+            </article>
+
+            <article class="certificate-entry reveal">
+              <div class="certificate-thumb">SE</div>
+              <p class="certificate-platform">Infosys Springboard</p>
+              <h3>Software Engineering</h3>
+              <p>Certificate covering core software engineering principles and workflows.</p>
+              <button
+                class="certificate-button document-trigger"
+                type="button"
+                data-file="./assets/certificates/infosys-software-engineering.pdf"
+                data-title="Software Engineering Certificate"
+                data-fallback="Software Engineering certificate PDF could not be found."
+              >
+                View Certificate
+              </button>
+              <a
+                class="inline-link"
+                href="./assets/certificates/infosys-software-engineering.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open in new tab
+              </a>
+            </article>
+
+            <article class="certificate-entry reveal">
+              <div class="certificate-thumb">WEB</div>
+              <p class="certificate-platform">Infosys Springboard</p>
+              <h3>Website Development</h3>
+              <p>Certificate focused on website development fundamentals and front-end practice.</p>
+              <button
+                class="certificate-button document-trigger"
+                type="button"
+                data-file="./assets/certificates/infosys-website-development.pdf"
+                data-title="Website Development Certificate"
+                data-fallback="Website Development certificate PDF could not be found."
+              >
+                View Certificate
+              </button>
+              <a
+                class="inline-link"
+                href="./assets/certificates/infosys-website-development.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open in new tab
+              </a>
+            </article>
+
+            <article class="certificate-entry reveal">
+              <div class="certificate-thumb">DSA</div>
+              <p class="certificate-platform">Infosys Springboard</p>
+              <h3>DSA</h3>
+              <p>Certificate recognizing work in data structures and algorithms.</p>
+              <button
+                class="certificate-button document-trigger"
+                type="button"
+                data-file="./assets/certificates/infosys-dsa.pdf"
+                data-title="DSA Certificate"
+                data-fallback="DSA certificate PDF could not be found."
+              >
+                View Certificate
+              </button>
+              <a class="inline-link" href="./assets/certificates/infosys-dsa.pdf" target="_blank" rel="noreferrer">
+                Open in new tab
+              </a>
+            </article>
+
+            <article class="certificate-entry reveal">
+              <div class="certificate-thumb">NAS</div>
+              <p class="certificate-platform">NASSCOM</p>
+              <h3>NASSCOM Certificate</h3>
+              <p>Professional certificate issued by NASSCOM.</p>
+              <button
+                class="certificate-button document-trigger"
+                type="button"
+                data-file="./assets/certificates/nasscom-certificate.pdf"
+                data-title="NASSCOM Certificate"
+                data-fallback="NASSCOM certificate PDF could not be found."
+              >
+                View Certificate
+              </button>
+              <a
+                class="inline-link"
+                href="./assets/certificates/nasscom-certificate.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open in new tab
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="languages">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Languages Known</p>
+            <h2>Comfortable communicating across three languages</h2>
+          </div>
+          <div class="language-strip reveal">
+            <span>Marathi</span>
+            <span>Hindi</span>
+            <span>English</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <div class="contact-copy">
+              <p class="section-kicker">Contact</p>
+              <h2>Let's connect and build something meaningful</h2>
+              <p>
+                I'm always open to learning opportunities, collaborations, and interesting tech
+                conversations.
+              </p>
+            </div>
+            <div class="contact-cards">
+              <a class="contact-card" href="mailto:swapnalipharande17@gmail.com">
+                <span>Email</span>
+                <strong>swapnalipharande17@gmail.com</strong>
+              </a>
+              <a class="contact-card" href="tel:+917387768310">
+                <span>Phone</span>
+                <strong>+91-7387768310</strong>
+              </a>
+              <div class="contact-actions">
+                <a class="primary-button" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                  LinkedIn
+                </a>
+                <a class="secondary-button" href="https://github.com/" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>Swapnali Pharande</p>
+        <p>&copy; <span id="currentYear"></span> All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" type="button" aria-label="Scroll to top">&uarr;</button>
+
+    <div class="resume-modal" id="resumeModal" aria-hidden="true">
+      <div class="resume-modal-backdrop" id="resumeModalBackdrop"></div>
+      <div class="resume-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+        <div class="resume-modal-header">
+          <h2 id="resumeModalTitle">Resume Preview</h2>
+          <button class="resume-modal-close" id="resumeModalClose" type="button" aria-label="Close resume viewer">
+            &times;
+          </button>
+        </div>
+        <div class="resume-modal-body">
+          <iframe id="resumeFrame" src="" title="Resume Viewer" loading="lazy"></iframe>
+          <p class="resume-fallback" id="resumeFallback">
+            Preview is unavailable here. Use the button below to open the resume in a new tab.
+          </p>
+        </div>
+        <div class="resume-modal-actions">
+          <a class="primary-button" id="resumeOpenNewTab" href="./assets/resume/resume.pdf" target="_blank">
+            Open In New Tab
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
